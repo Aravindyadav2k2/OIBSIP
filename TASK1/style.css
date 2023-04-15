@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/front-left-side-47.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgb(70, 56, 56),rgb(125, 179, 224));
+}
+
+nav ul{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    padding:10px ;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: rgb(236, 234, 234);
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    transition: 0.3s ease all;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+
+
+.text-box{
+    color: #dfdfdf;
+    position: absolute;
+    bottom: 8%;
+    margin: 20px;
+}
+
+.text-box p{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/back.png);
+   -webkit-background-clip : text;
+    background-position:0 0 ;
+    animation: back 30s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.explore{
+    top: 20px;
+    left: 500px;
+    position: relative;
+    margin-top: 20px;
+    margin: 100px;
+    border: 1px solid rgb(179, 165, 165);
+    padding: 10px ;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 40px;
+    font-size: 30px;
+    border-radius: 20px;
+    transition: 0.3 ease all;
+}
+
+.explore:hover{
+    padding: 30px;
+}
+
+
